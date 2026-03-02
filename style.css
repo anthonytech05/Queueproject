@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav h1{
+    color: white;
+}
+
+.nav-links li{
+    list-style: none;
+    font-size: 18px;
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-links a:hover{
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.btn{
+    font-size: 900;
+    padding: 10px 25px;
+    background-color: rgb(2, 24, 58);
+    border-color: rgba(255, 210, 12, 0.952);
+    border-radius: 5px;
+    color: rgba(253, 207, 4, 0.952);
+
+}
+
+.btn:hover{
+    background-color: rgba(253, 207, 4, 0.952);
+    color: black;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(2, 24, 58);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+/* nav ends here */
+
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+    background-color: rgb(253, 253, 253);
+}
+
+.hero-section img{
+    height: 400px;
+    width: 400px;
+}
+
+.smally{
+    font-size: 15px;
+    color: rgba(255, 174, 0, 0.925);
+    text-transform: uppercase;
+}
+
+.container h2{
+    font-size: 50px;
+    padding: 20px 0;
+    width: 45%;
+    font-family: "Playfair Display", serif;
+
+}
+
+.container span{
+    color: rgba(255, 174, 0, 0.925);
+}
+
+.container p{
+    font-size: 20px;
+    color: grey;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.btn2{
+    padding: 15px 20px ;
+    background-color:rgba(255, 174, 0, 0.925);
+    border: none;
+    border-radius: 5px;
+    margin: 30px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn2:hover{
+     transform: translateY(-5px);
+     box-shadow: 0 5px 15px rgb(255, 195, 31);
+}
+
+.btn3{
+    padding: 15px 20px;
+    color: black;
+    margin: 0 20px;
+    background-color: rgb(250, 251, 252);
+    border-color:rgb(255, 167, 36);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn3:hover{
+    border-color: rgb(2, 24, 58);
+    color: rgb(2, 24, 58);
+}
+/* hero-section ends here */
+
+.group{
+    background-color: rgb(5, 17, 34);
+
+}
+
+.carrier{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 50px 80px;
+    border-top: 1.5px solid rgb(255, 209, 3);
+}
+
+.dollar{
+    color: rgba(255, 174, 0, 0.925);
+    font-size: 38px;
+    font-family: "Playfair Display", serif;
+}
+
+.main-container p{
+    color: grey;
+}
+/* main ends here */
+
+.figo{
+    padding: 70px;
+    background-color: rgb(253, 249, 243);
+}
+
+.offer{
+    color: rgba(255, 174, 0, 0.925);
+    text-transform: uppercase;
+}
+
+.figo h2{
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.para{
+    font-size: 20px;
+    color: grey;
+    width: 40%;
+}
+
+.properties{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.item{
+    background-color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 191, 14);
+}
+
+.icons{
+    font-size: 50px;
+}
+
+.item h3{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px 0;
+}
+
+.item p{
+    color: grey;
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* figure ends here */
+
+figcaption{
+    background-color: rgb(6, 32, 70);
+    padding: 70px 60px;
+}
+
+.acl{
+    color: rgba(255, 174, 0, 0.925);
+    font-size: 20px;
+}
+
+figcaption h3{
+    font-size: 50px;
+    color: white;
+    padding: 20px 0;
+}
+
+.tag{
+    font-size: 20px;
+    color: grey;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.badge{
+    display: flex;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.plug{
+    background-color: rgb(3, 32, 75);
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 158, 158);
+    height: 78vh;
+}
+
+.plug:hover{
+     transform: translateY(-5px);
+     border: 1px solid  rgb(255, 187, 0);
+}
+
+.middle{
+    background-color: rgb(3, 32, 75);
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 177, 9);
+    height: 78vh;
+}
+
+.middle:hover{
+    transform: translateY(-5px);
+     /* border: 1px solid  rgb(255, 187, 0); */
+}
+
+.middle h4{
+     color: white;
+    font-size: 28px;
+}
+
+.middle h5{
+    font-size: 35px;
+    color: rgb(255, 197, 8);
+    padding: 10px 0;
+}
+
+.middle span{
+     font-size: 18px;
+}
+
+.middle p{
+    color: grey;
+    width: 70%;
+    line-height: 1.5;
+}
+
+.top-span{
+    position: relative;
+    top: -32rem;
+    right: -90px;
+    background-color: rgb(255, 187, 0);
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.label{
+    color: rgb(255, 187, 0);
+    padding: 30px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.plug h4{
+    color: white;
+    font-size: 28px;
+}
+
+.plug h5{
+    font-size: 35px;
+    color: rgb(255, 197, 8);
+    padding: 10px 0;
+}
+
+.plug span{
+    font-size: 18px;
+}
+
+.plug h2{
+    color: rgb(255, 197, 8);
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.plug p{
+    color: grey;
+    width: 70%;
+    line-height: 1.5;
+}
+
+.star{
+    color: rgb(214, 208, 208);
+    line-height: 1;
+    padding-top: 20px;
+    border-bottom: 0.3px solid rgb(131, 129, 129);
+}
+
+.btn8{
+    background-color: rgb(3, 32, 75);
+    color: white;
+    padding: 10px 20px;
+    width: 70%;
+    margin: 30px 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.btn8:hover{
+    transform: translateY(-5px);
+    border: 1px solid  rgb(255, 187, 0);
+    
+}
+
+.btn1{
+    background-color:  rgb(255, 187, 0);
+    padding: 10px 35px;
+    margin: 30px 60px;
+    border: 1px solid  rgb(255, 187, 0);
+    color: black;
+    border-radius: 5px;
+    font-size: 400;
+}
+
+.btn1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgb(199, 197, 197);
+
+}
+/* figcaption ends here */
+
+
+.about {
+  padding: 50px;
+  text-align: center;
+}
+
+.about h2{
+    font-size: 50px;
+}
+
+.about p{
+    font-size: 20px;
+    color: grey;
+    padding: 20px 0;
+}
+/* section ends here */
+
+.book {
+  padding: 50px;
+  background: whitesmoke;
+  text-align: center;
+}
+
+.book h2{
+    font-size: 40px;
+}
+
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn9{
+  background: rgb(3, 32, 75);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#confirmation {
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* main book ends here */
+
+.classy{
+    background-color:  rgb(1, 17, 41);
+    /* text-align: center; */
+    padding: 60px 0;
+}
+
+.divison{
+    color:  rgb(255, 197, 8);
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.classy h1{
+    font-size: 50px;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.classy p{
+    font-size: 20px;
+    color: grey;
+    padding-left: 450px;
+    /* text-align: center; */
+    width: 70%;
+}
+
+.cold{
+    padding: 10px 30px;
+    margin-left: 450px;
+    margin-top: 40px;
+    background-color:  rgb(243, 186, 0);
+    border-radius: 5px;
+    border: none;
+}
+
+.slip{
+    padding: 10px 30px;
+    margin: 0 20px;
+    background-color: rgb(1, 17, 41);
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+/* figure ends here */
+
+footer{
+    background-color: rgb(3, 1, 31);
+    padding-top: 50px;
+}
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.footer h1{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    
+}
+
+.footer p{
+    color: grey;
+    width: 50%;
+    padding: 10px 0;
+    line-height: 1.5;
+
+}
+
+.footer h3{
+    color: rgb(245, 188, 0);
+    font-size: 20px;
+}
+
+.footer li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: grey;
+    line-height: 1;
+}
+
+.copy p{
+    color: grey;
+    margin-top: 50px;
+    border-top: 1px solid grey;
+    padding: 20px 50px;
+}
+
+
+
+
+
+
+
+/* media query starts here */
+@media screen and (max-width:768px){
+    .nav-links li{
+        display: none;
+    }
+
+    .hero-section{
+        flex-direction: column;
+        /* text-align: center; */
+        padding: 20px;
+    }
+
+    .hero-section img{
+        width: 380px;
+        height: 380px;
+    }
+
+    .container h2{
+        width: 100%;
+        font-size: 50px;
+        padding: 10px 0;
+        
+    }
+
+    .container p{
+        width: 100%;
+    }
+
+    .btn3{
+        margin: 0 10px;
+    }
+
+    .carrier{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .figo{
+        padding: 50px 30px;
+    }
+
+    .figo h2{
+        font-size: 40px;
+    }
+
+    .para{
+        width: 100%;
+    }
+
+    .properties{
+        grid-template-columns: 1fr;
+    }
+
+    figcaption h3{
+    font-size: 45px;
+    color: white;
+    padding: 20px 0;
+   }
+
+
+    .tag{
+        font-size: 20px;
+        color: grey;
+        width: 100%;
+    }
+
+    .badge{
+        flex-direction: column;
+    }
+
+    .plug{
+        height: 65vh;
+    }
+
+    .plug p{
+        width: 100%;
+    }
+
+    .btn8{
+        margin: 30px 30px;
+    }
+
+    .middle{
+        height: 70vh;
+    }
+
+    .middle p{
+        width: 100%;
+    }
+
+    .top-span{
+        position: relative;
+        top: -34rem;
+        right: -35px;
+    }
+
+    .btn1{
+        margin: 40px 20px;
+    }
+
+    .classy p{
+         padding-left: 30px;
+         width: 100%;
+    }
+
+    .cold{
+        margin-left: 100px;
+    }
+
+    .slip{
+        margin: 20px 100px;
+    }
+
+    .footer-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer p{
+        width: 100%;
+    }
+
+    .footer h3{
+        padding-top: 20px;
+    }
+
+    .copy p{
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+
+
+
+
