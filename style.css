@@ -23,7 +23,7 @@ nav h1{
 }
 
 .nav-links a:hover{
-    color: black;
+    color: red;
     padding: 10px;
     border-radius: 20px;
     background-color: white;
@@ -32,7 +32,7 @@ nav h1{
 .btn{
     font-size: 900;
     padding: 10px 25px;
-    background-color: rgb(2, 24, 58);
+    background-color: rgb(3, 2, 58);
     border-color: rgba(255, 210, 12, 0.952);
     border-radius: 5px;
     color: rgba(253, 207, 4, 0.952);
@@ -44,12 +44,19 @@ nav h1{
     color: black;
 }
 
+.menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 nav{
     display: flex;
-    background-color: rgb(2, 24, 58);
+    background-color: rgb(3, 2, 58);
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    border-bottom: 1px solid rgb(255, 196, 0);
 }
 /* nav ends here */
 
@@ -57,12 +64,12 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 70px;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(4, 11, 51);
 }
 
 .hero-section img{
     height: 400px;
-    width: 400px;
+    width: 420px;
 }
 
 .smally{
@@ -72,6 +79,7 @@ nav{
 }
 
 .container h2{
+    color: white;
     font-size: 50px;
     padding: 20px 0;
     width: 45%;
@@ -110,20 +118,20 @@ nav{
     color: black;
     margin: 0 20px;
     background-color: rgb(250, 251, 252);
-    border-color:rgb(255, 167, 36);
+    border-color:rgb(255, 155, 4);
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
 }
 
 .btn3:hover{
-    border-color: rgb(2, 24, 58);
+    border-color: rgb(255, 6, 6);
     color: rgb(2, 24, 58);
 }
 /* hero-section ends here */
 
 .group{
-    background-color: rgb(5, 17, 34);
+    background-color: rgb(9, 8, 80);
 
 }
 
@@ -145,6 +153,7 @@ nav{
     color: grey;
 }
 /* main ends here */
+
 
 .figo{
     padding: 70px;
@@ -282,7 +291,7 @@ figcaption h3{
 .top-span{
     position: relative;
     top: -32rem;
-    right: -90px;
+    right: -105px;
     background-color: rgb(255, 187, 0);
     padding: 5px 15px;
     border-radius: 20px;
@@ -417,8 +426,63 @@ input, select, button {
 }
 /* main book ends here */
 
+.admin {
+  padding: 50px 20px;
+  background: white;
+}
+
+.admin h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+}
+
+thead {
+  background: rgb(4, 9, 70);
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background: rgb(202, 199, 199);
+}
+
+tbody tr:hover {
+  background: rgb(224, 216, 216);
+}
+
+.admin button {
+  padding: 6px 12px;
+  background: rgb(0, 128, 117);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.admin button:hover {
+  background: rgb(0, 128, 117);
+}
+/* adim ends here */
+
 .classy{
-    background-color:  rgb(1, 17, 41);
+    background-color:  rgb(2, 12, 58);
     /* text-align: center; */
     padding: 60px 0;
 }
@@ -454,10 +518,232 @@ input, select, button {
     border: none;
 }
 
+/* ── Variables ── */
+:root {
+  --navy:    #0d1f3c;
+  --gold:    #c9a84c;
+  --gold-lt: #e8c96e;
+  --white:   #ffffff;
+  --surface: #f5f6fa;
+  --border:  #dde1ea;
+  --error:   #d64040;
+  --success: #2b9e6b;
+  --text:    #1a1a2e;
+  --muted:   #6b7280;
+  --radius:  12px;
+}
+
+/* ── Open Account Button ── */
+.btn-open {
+    margin-left: 450px;
+    padding: 10px 30px;
+    margin-left: 450px;
+    margin-top: 40px;
+    background-color:  rgb(243, 186, 0);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 40px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-weight: 600; */
+    
+    /* transition: background .2s, transform .15s; */
+}
+.btn-open:hover {
+  background: var(--gold-lt);
+  box-shadow: 0 5px 15px rgb(231, 132, 3);
+  transform: translateY(-1px);
+}
+
+/* ── Overlay ── */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 31, 60, .55);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.overlay.active {
+  display: flex;
+}
+
+/* ── Modal Card ── */
+.modal {
+  background: var(--white);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px 36px 36px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, .22);
+  position: relative;
+  animation: slideUp .35s cubic-bezier(.22, .68, 0, 1.2) forwards;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px) scale(.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Close Button ── */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: var(--surface);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transition: background .2s, color .2s; */
+}
+.close-btn:hover {
+  background: #e5e7ef;
+  color: var(--text);
+}
+
+/* ── Modal Header ── */
+.modal-header { margin-bottom: 28px; }
+
+.modal-header .tag {
+  display: inline-block;
+  background: rgba(201, 168, 76, .15);
+  color: var(--gold);
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+  /* margin-bottom: 10px; */
+}
+.modal-header h2 {
+  font-size: 1.65rem;
+  color: var(--navy);
+}
+.modal-header p {
+  color:black;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* ── Form Grid ── */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+/* ── Labels & Inputs ── */
+label {
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 6px;
+  letter-spacing: .3px;
+}
+input, select {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 14px;
+  font-size: .9rem;
+  color: var(--text);
+  background: var(--white);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+input:focus, select:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(13, 31, 60, .1);
+}
+input.error, select.error {
+  border-color: var(--error);
+}
+
+/* ── Error Messages ── */
+.error-msg {
+  color: var(--error);
+  font-size: .75rem;
+  margin-top: 4px;
+  display: none;
+}
+.error-msg.show {
+  display: block;
+}
+
+/* ── Submit Button ── */
+.btn-submit {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  background: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: .4px;
+  transition: 2s, transform .15s;
+}
+.btn-submit:hover {
+  background: #162d52;
+  transform: translateY(-1px);
+}
+
+/* ── Success Toast ── */
+.toast {
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--success);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: .95rem;
+  box-shadow: 0 8px 24px rgba(43, 158, 107, .35);
+  z-index: 200;
+  white-space: nowrap;
+  animation: fadeIn .3s ease;
+}
+.toast.show {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; bottom: 20px; }
+  to   { opacity: 1; bottom: 32px; }
+}
+
+
 .slip{
     padding: 10px 30px;
     margin: 0 20px;
-    background-color: rgb(1, 17, 41);
+    background-color: rgb(2, 12, 58);
     color: white;
     border: 1px solid grey;
     border-radius: 5px;
@@ -506,6 +792,10 @@ footer{
     line-height: 1;
 }
 
+.footer a:hover{
+    color: rgb(255, 187, 0);
+}
+
 .copy p{
     color: grey;
     margin-top: 50px;
@@ -521,8 +811,33 @@ footer{
 
 /* media query starts here */
 @media screen and (max-width:768px){
-    .nav-links li{
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        top: 70px;
+        right: 0;
+        width: 100%;
         display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .nav-links li{
+        display: block;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .menu-icon{
+        color: white;
+        display: block;
+        font-size: 30px;
+
     }
 
     .hero-section{
@@ -532,8 +847,8 @@ footer{
     }
 
     .hero-section img{
-        width: 380px;
-        height: 380px;
+        width: 450px;
+        height: 400px;
     }
 
     .container h2{
@@ -612,12 +927,26 @@ footer{
 
     .top-span{
         position: relative;
-        top: -34rem;
-        right: -35px;
+        top: -33.5rem;
+        right: -70px;
     }
 
     .btn1{
-        margin: 40px 20px;
+        margin: 40px 30px;
+    }
+
+    .admin{
+        padding: 50px 5px;
+    }
+
+    table {
+     margin: 0;
+     max-width: 100px;
+     width: 40%;
+    }
+
+    .admin button {
+        padding: 6px 10px;
     }
 
     .classy p{
@@ -625,12 +954,12 @@ footer{
          width: 100%;
     }
 
-    .cold{
-        margin-left: 100px;
+    .btn-open{
+        margin-left: 120px;
     }
 
     .slip{
-        margin: 20px 100px;
+        margin: 20px 120px;
     }
 
     .footer-card{
