@@ -29,6 +29,10 @@ nav h1{
     background-color: white;
 }
 
+.admin-icon{
+    font-size: 20px;
+}
+
 .btn{
     font-size: 900;
     padding: 10px 25px;
@@ -41,6 +45,13 @@ nav h1{
 
 .btn:hover{
     background-color: rgba(253, 207, 4, 0.952);
+    color: black;
+}
+.btn a{
+    text-decoration: none;
+    color: rgba(253, 207, 4, 0.952);
+}
+.btn a:hover{
     color: black;
 }
 
@@ -99,6 +110,7 @@ nav{
 }
 
 .btn2{
+    color: white;
     padding: 15px 20px ;
     background-color:rgba(255, 174, 0, 0.925);
     border: none;
@@ -426,60 +438,6 @@ input, select, button {
 }
 /* main book ends here */
 
-.admin {
-  padding: 50px 20px;
-  background: white;
-}
-
-.admin h2 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  background: white;
-}
-
-thead {
-  background: rgb(4, 9, 70);
-  color: white;
-}
-
-th, td {
-  padding: 12px;
-  text-align: center;
-}
-
-th {
-  font-weight: bold;
-}
-
-tbody tr:nth-child(even) {
-  background: rgb(202, 199, 199);
-}
-
-tbody tr:hover {
-  background: rgb(224, 216, 216);
-}
-
-.admin button {
-  padding: 6px 12px;
-  background: rgb(0, 128, 117);
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.admin button:hover {
-  background: rgb(0, 128, 117);
-}
-/* adim ends here */
 
 .classy{
     background-color:  rgb(2, 12, 58);
@@ -543,16 +501,6 @@ tbody tr:hover {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    /* margin-top: 40px;
-    background: var(--gold);
-    color: var(--navy);
-    border: none;
-    padding: 10px 24px;
-    border-radius: 50px;
-    font-size: .9rem;
-    font-weight: 600; */
-    
-    /* transition: background .2s, transform .15s; */
 }
 .btn-open:hover {
   background: var(--gold-lt);
@@ -810,7 +758,10 @@ footer{
 
 
 /* media query starts here */
-@media screen and (max-width:768px){
+@media screen and (max-width:850px){
+    body{
+        overflow-x: hidden;
+    }
     .nav-links{
         position: absolute;
         background-color: white;
@@ -906,7 +857,7 @@ footer{
     }
 
     .plug{
-        height: 65vh;
+        height: 75vh;
     }
 
     .plug p{
@@ -914,11 +865,11 @@ footer{
     }
 
     .btn8{
-        margin: 30px 30px;
+        margin: 60px 40px;
     }
 
     .middle{
-        height: 70vh;
+        height: 85vh;
     }
 
     .middle p{
@@ -927,12 +878,12 @@ footer{
 
     .top-span{
         position: relative;
-        top: -33.5rem;
+        top: -38rem;
         right: -70px;
     }
 
     .btn1{
-        margin: 40px 30px;
+        margin: 70px 50px;
     }
 
     .admin{
@@ -955,11 +906,11 @@ footer{
     }
 
     .btn-open{
-        margin-left: 120px;
+        margin-left: 100px;
     }
 
     .slip{
-        margin: 20px 120px;
+        margin: 20px 100px;
     }
 
     .footer-card{

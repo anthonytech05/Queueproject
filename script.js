@@ -9,28 +9,31 @@ hamburger.addEventListener("click", () => {
 
 }
 
+
 //Appointment form
 const form1 = document.getElementById("appointmentForm");
 const confirmation = document.getElementById("confirmation");
 
-let appointments = [];
-let queueCounter = 0;
+// Load existing data from localStorage
+let appointments = JSON.parse(localStorage.getItem("appointments")) || [];
+let queueCounter = parseInt(localStorage.getItem("queueCounter")) || 0;
 
 form1.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const name = document.getElementById("fullname").value;
   const branch = document.getElementById("branch").value;
+  const issue = document.getElementById("issue").value;
   const date = document.getElementById("date").value;
   const time = document.getElementById("time").value;
 
-  // const queueNumber = "BK-" + Math.floor(Math.random() * 90000 + 10000);
   queueCounter++;
   const queueNumber = 'BK-' + queueCounter;
 
   const newAppointment = {
     name,
     branch,
+    issue,
     date,
     time,
     queueNumber,
@@ -39,41 +42,17 @@ form1.addEventListener("submit", function (e) {
 
   appointments.push(newAppointment);
 
+  // Save BOTH appointments and counter to localStorage
+  localStorage.setItem("appointments", JSON.stringify(appointments));
+  localStorage.setItem("queueCounter", String(queueCounter));
+
   confirmation.innerHTML = `
     <h3>Appointment Confirmed</h3>
-    Queue No: ${queueNumber}
+    <p>Queue No: ${queueNumber}</p>
   `;
 
-  displayAppointments();
   form1.reset();
 });
-
-function displayAppointments() {
-  const adminTable = document.getElementById("adminTable");
-
-  adminTable.innerHTML = "";
-
-  appointments.forEach((appt, index) => {
-    adminTable.innerHTML += `
-      <tr>
-        <td>${appt.name}</td>
-        <td>${appt.branch}</td>
-        <td>${appt.date}</td>
-        <td>${appt.time}</td>
-        <td>${appt.queueNumber}</td>
-        <td>${appt.status}</td>
-        <td>
-          <button onclick="markServed(${index})">Serve</button>
-        </td>
-      </tr>
-    `;
-  });
-}
-
-function markServed(index) {
-  appointments[index].status = "Served";
-  displayAppointments();
-}
 
 
 //Hidden form button
