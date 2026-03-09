@@ -55,7 +55,28 @@ form1.addEventListener("submit", function (e) {
 });
 
 
-//Hidden form button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+//Hidden form button for open an acccount!
 // Field definitions with validation rules
 const fields = [
   { id: 'acc-firstName',   errId: 'acc-firstNameErr',   check: v => v.trim() !== '' },
@@ -115,6 +136,35 @@ function submitForm() {
 
   if (!valid) return;
 
+  // Get values
+  const email    = document.getElementById('acc-email').value.trim();
+  const password = document.getElementById('acc-password').value;
+
+  // Check if email already exists
+  const users = JSON.parse(localStorage.getItem('users')) || [];
+  const exists = users.find(u => u.email === email);
+  if (exists) {
+    const emailEl  = document.getElementById('acc-email');
+    const emailErr = document.getElementById('acc-emailErr');
+    emailEl.classList.add('error');
+    emailErr.textContent = 'An account with this email already exists.';
+    emailErr.classList.add('show');
+    return;
+  }
+
+  // Save new user to localStorage
+  users.push({
+    firstName:   document.getElementById('acc-firstName').value.trim(),
+    lastName:    document.getElementById('acc-lastName').value.trim(),
+    email,
+    password,
+    phone:       document.getElementById('acc-phone').value.trim(),
+    dob:         document.getElementById('acc-dob').value,
+    accountType: document.getElementById('acc-accountType').value,
+    address:     document.getElementById('acc-address').value.trim(),
+  });
+  localStorage.setItem('users', JSON.stringify(users));
+
   // Reset all fields
   fields.forEach(({ id, errId }) => {
     document.getElementById(id).value = '';
@@ -122,9 +172,14 @@ function submitForm() {
     document.getElementById(errId).classList.remove('show');
   });
 
-  // Close modal and show success toast
+  // Close modal and show toast then redirect
   closeModal();
   const toast = document.getElementById('toast');
   toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 4000);
+
+  // Redirect to sign in after toast shows
+  setTimeout(() => {
+    toast.classList.remove('show');
+    window.location.href = 'signin.html';
+  }, 2000);
 }

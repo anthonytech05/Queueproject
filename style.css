@@ -74,7 +74,7 @@ nav{
 .hero-section{
     display: flex;
     justify-content: space-around;
-    padding: 70px;
+    padding: 100px;
     background-color: rgb(4, 11, 51);
 }
 
@@ -93,7 +93,7 @@ nav{
     color: white;
     font-size: 50px;
     padding: 20px 0;
-    width: 45%;
+    width: 50%;
     font-family: "Playfair Display", serif;
 
 }
@@ -151,7 +151,7 @@ nav{
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 50px 80px;
+    padding: 50px 100px;
     border-top: 1.5px solid rgb(255, 209, 3);
 }
 
@@ -223,6 +223,28 @@ nav{
     line-height: 1.5;
 }
 /* figure ends here */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(255, 174, 0, 0.925); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgb(6, 6, 46); /* Add a blue background on hover */
+}
+/* Scroll button ends here */
+
 
 figcaption{
     background-color: rgb(6, 32, 70);
@@ -436,6 +458,7 @@ input, select, button {
   margin-top: 20px;
   font-weight: bold;
 }
+
 /* main book ends here */
 
 
@@ -459,7 +482,7 @@ input, select, button {
     text-align: center;
 }
 
-.classy p{
+.advisor{
     font-size: 20px;
     color: grey;
     padding-left: 450px;
@@ -566,7 +589,9 @@ input, select, button {
 }
 
 /* ── Modal Header ── */
-.modal-header { margin-bottom: 28px; }
+.modal-header { 
+    margin-bottom: 28px; 
+}
 
 .modal-header .tag {
   display: inline-block;
@@ -580,14 +605,19 @@ input, select, button {
   border-radius: 50px;
   /* margin-bottom: 10px; */
 }
-.modal-header h2 {
+.modal-header h2{
   font-size: 1.65rem;
   color: var(--navy);
+  margin-top: 10px;
 }
-.modal-header p {
-  color:black;
-  font-size: 20px;
+
+.linear{
+  color: black;
+  font-size: 1.2rem;
   margin-top: 5px;
+  line-height: 1.5;
+  display: block;
+  width: 100%
 }
 
 /* ── Form Grid ── */
@@ -668,20 +698,21 @@ input.error, select.error {
   bottom: 32px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--success);
-  color: var(--white);
+  background: #2b9e6b;
+  color: white;
   padding: 14px 28px;
   border-radius: 50px;
   font-weight: 600;
-  font-size: .95rem;
-  box-shadow: 0 8px 24px rgba(43, 158, 107, .35);
-  z-index: 200;
+  font-size: 1rem;
+  box-shadow: 0 8px 24px rgba(43,158,107,0.35);
+  z-index: 9999;
   white-space: nowrap;
-  animation: fadeIn .3s ease;
 }
 .toast.show {
   display: block;
 }
+
+
 @keyframes fadeIn {
   from { opacity: 0; bottom: 20px; }
   to   { opacity: 1; bottom: 32px; }
@@ -695,6 +726,13 @@ input.error, select.error {
     color: white;
     border: 1px solid grey;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.slip:hover{
+    transform: translateY(-1px);
+    border: 1px solid  rgb(208, 208, 224);
+    box-shadow: 0 5px 15px rgb(131, 130, 129);
 }
 /* figure ends here */
 
@@ -758,7 +796,7 @@ footer{
 
 
 /* media query starts here */
-@media screen and (max-width:850px){
+@media screen and (max-width:768px) {
     body{
         overflow-x: hidden;
     }
@@ -804,7 +842,7 @@ footer{
 
     .container h2{
         width: 100%;
-        font-size: 50px;
+        font-size: 45px;
         padding: 10px 0;
         
     }
@@ -878,12 +916,12 @@ footer{
 
     .top-span{
         position: relative;
-        top: -38rem;
-        right: -70px;
+        top: -37rem;
+        right: -80px;
     }
 
     .btn1{
-        margin: 70px 50px;
+        margin: 70px 30px;
     }
 
     .admin{

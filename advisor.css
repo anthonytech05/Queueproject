@@ -1,0 +1,154 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+  background: #f4f5f7;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 40px 36px;
+  max-width: 460px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-btn:hover { color: #111; }
+
+.card-header {
+  margin-bottom: 28px;
+}
+
+.card-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.card-header p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+  color: #111;
+  outline: none;
+  background: #fafafa;
+  transition: border-color 0.2s;
+  font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #111;
+  background: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Submit button */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover { background: #333; }
+
+/* Confirmation */
+.confirmation {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.confirm-icon {
+  width: 60px;
+  height: 60px;
+  background: #f0fff4;
+  border: 2px solid #22c55e;
+  color: #22c55e;
+  font-size: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.confirmation h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.confirmation p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #111;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-home:hover { background: #333; }
