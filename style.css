@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
+/* ===================== RESET ===================== */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav h1{
-    color: white;
+/* ===================== NAV ===================== */
+nav {
+    display: flex;
+    background-color: rgb(3, 2, 58);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(255, 196, 0);
 }
 
-.nav-links li{
+nav h1 { color: white; }
+
+.nav-links li {
     list-style: none;
     font-size: 18px;
     display: inline;
@@ -22,132 +31,115 @@ nav h1{
     color: grey;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: red;
     padding: 10px;
     border-radius: 20px;
     background-color: white;
 }
 
-.admin-icon{
-    font-size: 20px;
-}
+.admin-icon { font-size: 20px; }
 
-.btn{
-    font-size: 900;
-    padding: 10px 25px;
-    background-color: rgb(3, 2, 58);
-    border-color: rgba(255, 210, 12, 0.952);
-    border-radius: 5px;
-    color: rgba(253, 207, 4, 0.952);
-
-}
-
-.btn:hover{
-    background-color: rgba(253, 207, 4, 0.952);
-    color: black;
-}
-.btn a{
-    text-decoration: none;
-    color: rgba(253, 207, 4, 0.952);
-}
-.btn a:hover{
-    color: black;
-}
-
-.menu-icon{
+.menu-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
 }
 
-nav{
-    display: flex;
+.btn {
+    padding: 10px 25px;
     background-color: rgb(3, 2, 58);
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid rgb(255, 196, 0);
+    border-color: rgba(255, 210, 12, 0.952);
+    border-radius: 5px;
+    color: rgba(253, 207, 4, 0.952);
 }
-/* nav ends here */
 
-.hero-section{
+.btn:hover {
+    background-color: rgba(253, 207, 4, 0.952);
+    color: black;
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgba(253, 207, 4, 0.952);
+}
+
+.btn a:hover { color: black; }
+
+/* ===================== HERO ===================== */
+.hero-section {
     display: flex;
     justify-content: space-around;
     padding: 100px;
     background-color: rgb(4, 11, 51);
 }
 
-.hero-section img{
+.hero-section img {
     height: 400px;
     width: 420px;
 }
 
-.smally{
+.smally {
     font-size: 15px;
     color: rgba(255, 174, 0, 0.925);
     text-transform: uppercase;
 }
 
-.container h2{
+.container h2 {
     color: white;
     font-size: 50px;
     padding: 20px 0;
     width: 50%;
     font-family: "Playfair Display", serif;
-
 }
 
-.container span{
-    color: rgba(255, 174, 0, 0.925);
-}
+.container span { color: rgba(255, 174, 0, 0.925); }
 
-.container p{
+.container > p {
     font-size: 20px;
     color: grey;
     width: 50%;
     line-height: 1.5;
 }
 
-.btn2{
+.btn2 {
     color: white;
-    padding: 15px 20px ;
-    background-color:rgba(255, 174, 0, 0.925);
+    padding: 15px 20px;
+    background-color: rgba(255, 174, 0, 0.925);
     border: none;
     border-radius: 5px;
     margin: 30px 0;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.btn2:hover{
-     transform: translateY(-5px);
-     box-shadow: 0 5px 15px rgb(255, 195, 31);
+.btn2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgb(255, 195, 31);
 }
 
-.btn3{
+.btn3 {
     padding: 15px 20px;
     color: black;
     margin: 0 20px;
     background-color: rgb(250, 251, 252);
-    border-color:rgb(255, 155, 4);
+    border-color: rgb(255, 155, 4);
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.btn3:hover{
+.btn3:hover {
     border-color: rgb(255, 6, 6);
     color: rgb(2, 24, 58);
 }
-/* hero-section ends here */
 
-.group{
-    background-color: rgb(9, 8, 80);
+/* ===================== STATS ===================== */
+.group { background-color: rgb(9, 8, 80); }
 
-}
-
-.carrier{
+.carrier {
     display: flex;
     justify-content: space-between;
     color: white;
@@ -155,127 +147,119 @@ nav{
     border-top: 1.5px solid rgb(255, 209, 3);
 }
 
-.dollar{
+.dollar {
     color: rgba(255, 174, 0, 0.925);
     font-size: 38px;
     font-family: "Playfair Display", serif;
 }
 
-.main-container p{
-    color: grey;
-}
-/* main ends here */
+.main-container p { color: grey; }
 
-
-.figo{
+/* ===================== SERVICES ===================== */
+.figo {
     padding: 70px;
     background-color: rgb(253, 249, 243);
 }
 
-.offer{
+.offer {
     color: rgba(255, 174, 0, 0.925);
     text-transform: uppercase;
 }
 
-.figo h2{
+.figo h2 {
     font-size: 50px;
     padding: 20px 0;
 }
 
-.para{
+.para {
     font-size: 20px;
     color: grey;
     width: 40%;
 }
 
-.properties{
+.properties {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     padding-top: 50px;
 }
 
-.item{
-    background-color: rgb(255, 255, 255);
+.item {
+    background-color: white;
     padding: 40px 20px;
     border-radius: 8px;
 }
 
-.item:hover{
+.item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgb(255, 255, 255);
     border-top: 1px solid rgb(255, 191, 14);
 }
 
-.icons{
-    font-size: 50px;
-}
+.icons { font-size: 50px; }
 
-.item h3{
+.item h3 {
     font-size: 20px;
     font-weight: lighter;
     padding: 20px 0;
 }
 
-.item p{
+.item p {
     color: grey;
     font-size: 18px;
     line-height: 1.5;
 }
-/* figure ends here */
 
+/* ===================== SCROLL BUTTON ===================== */
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: rgba(255, 174, 0, 0.925); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 50px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 174, 0, 0.925);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 18px;
 }
 
-#myBtn:hover {
-  background-color: rgb(6, 6, 46); /* Add a blue background on hover */
-}
-/* Scroll button ends here */
+#myBtn:hover { background-color: rgb(6, 6, 46); }
 
-
-figcaption{
+/* ===================== ACCOUNT TYPES ===================== */
+figcaption {
     background-color: rgb(6, 32, 70);
     padding: 70px 60px;
 }
 
-.acl{
+.acl {
     color: rgba(255, 174, 0, 0.925);
     font-size: 20px;
 }
 
-figcaption h3{
+figcaption h3 {
     font-size: 50px;
     color: white;
     padding: 20px 0;
 }
 
-.tag{
+.tag {
     font-size: 20px;
     color: grey;
     width: 40%;
     line-height: 1.5;
 }
 
-.badge{
+.badge {
     display: flex;
     gap: 40px;
     padding-top: 50px;
 }
 
-.plug{
+.plug {
     background-color: rgb(3, 32, 75);
     padding: 0 20px;
     border-radius: 5px;
@@ -283,12 +267,18 @@ figcaption h3{
     height: 78vh;
 }
 
-.plug:hover{
-     transform: translateY(-5px);
-     border: 1px solid  rgb(255, 187, 0);
+.plug:hover {
+    transform: translateY(-5px);
+    border: 1px solid rgb(255, 187, 0);
 }
 
-.middle{
+.plug h4 { color: white; font-size: 28px; }
+.plug h5 { font-size: 35px; color: rgb(255, 197, 8); padding: 10px 0; }
+.plug span { font-size: 18px; }
+.plug h2 { color: rgb(255, 197, 8); font-size: 30px; padding: 10px 0; }
+.plug p { color: grey; width: 70%; line-height: 1.5; }
+
+.middle {
     background-color: rgb(3, 32, 75);
     padding: 0 20px;
     border-radius: 5px;
@@ -296,33 +286,13 @@ figcaption h3{
     height: 78vh;
 }
 
-.middle:hover{
-    transform: translateY(-5px);
-     /* border: 1px solid  rgb(255, 187, 0); */
-}
+.middle:hover { transform: translateY(-5px); }
+.middle h4 { color: white; font-size: 28px; }
+.middle h5 { font-size: 35px; color: rgb(255, 197, 8); padding: 10px 0; }
+.middle span { font-size: 18px; }
+.middle p { color: grey; width: 70%; line-height: 1.5; }
 
-.middle h4{
-     color: white;
-    font-size: 28px;
-}
-
-.middle h5{
-    font-size: 35px;
-    color: rgb(255, 197, 8);
-    padding: 10px 0;
-}
-
-.middle span{
-     font-size: 18px;
-}
-
-.middle p{
-    color: grey;
-    width: 70%;
-    line-height: 1.5;
-}
-
-.top-span{
+.top-span {
     position: relative;
     top: -32rem;
     right: -105px;
@@ -332,48 +302,21 @@ figcaption h3{
     text-transform: uppercase;
 }
 
-.label{
+.label {
     color: rgb(255, 187, 0);
     padding: 30px 0;
     font-size: 15px;
     text-transform: uppercase;
 }
 
-.plug h4{
-    color: white;
-    font-size: 28px;
-}
-
-.plug h5{
-    font-size: 35px;
-    color: rgb(255, 197, 8);
-    padding: 10px 0;
-}
-
-.plug span{
-    font-size: 18px;
-}
-
-.plug h2{
-    color: rgb(255, 197, 8);
-    font-size: 30px;
-    padding: 10px 0;
-}
-
-.plug p{
-    color: grey;
-    width: 70%;
-    line-height: 1.5;
-}
-
-.star{
+.star {
     color: rgb(214, 208, 208);
     line-height: 1;
     padding-top: 20px;
     border-bottom: 0.3px solid rgb(131, 129, 129);
 }
 
-.btn8{
+.btn8 {
     background-color: rgb(3, 32, 75);
     color: white;
     padding: 10px 20px;
@@ -381,345 +324,120 @@ figcaption h3{
     margin: 30px 50px;
     border: 1px solid grey;
     border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn8:hover{
+.btn8:hover {
     transform: translateY(-5px);
-    border: 1px solid  rgb(255, 187, 0);
-    
+    border: 1px solid rgb(255, 187, 0);
 }
 
-.btn1{
-    background-color:  rgb(255, 187, 0);
+.btn1 {
+    background-color: rgb(255, 187, 0);
     padding: 10px 35px;
     margin: 30px 60px;
-    border: 1px solid  rgb(255, 187, 0);
+    border: 1px solid rgb(255, 187, 0);
     color: black;
     border-radius: 5px;
-    font-size: 400;
+    cursor: pointer;
 }
 
-.btn1:hover{
+.btn1:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgb(199, 197, 197);
-
 }
-/* figcaption ends here */
 
-
+/* ===================== ABOUT ===================== */
 .about {
-  padding: 50px;
-  text-align: center;
+    padding: 50px;
+    text-align: center;
 }
 
-.about h2{
-    font-size: 50px;
-}
+.about h2 { font-size: 50px; }
 
-.about p{
+.about p {
     font-size: 20px;
     color: grey;
     padding: 20px 0;
 }
-/* section ends here */
 
+/* ===================== BOOKING ===================== */
 .book {
-  padding: 50px;
-  background: whitesmoke;
-  text-align: center;
+    padding: 50px;
+    background: whitesmoke;
+    text-align: center;
 }
 
-.book h2{
-    font-size: 40px;
-}
-
+.book h2 { font-size: 40px; }
 
 form {
-  max-width: 400px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 input, select, button {
-  padding: 10px;
-  font-size: 16px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-.btn9{
-  background: rgb(3, 32, 75);
-  color: white;
-  border: none;
-  cursor: pointer;
+.btn9 {
+    background: rgb(3, 32, 75);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 #confirmation {
-  margin-top: 20px;
-  font-weight: bold;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
-/* main book ends here */
-
-
-.classy{
-    background-color:  rgb(2, 12, 58);
-    /* text-align: center; */
+/* ===================== CTA SECTION ===================== */
+.classy {
+    background-color: rgb(2, 12, 58);
     padding: 60px 0;
 }
 
-.divison{
-    color:  rgb(255, 197, 8);
+.divison {
+    color: rgb(255, 197, 8);
     font-size: 18px;
     text-align: center;
-
 }
 
-.classy h1{
+.classy h1 {
     font-size: 50px;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-.advisor{
+.advisor {
     font-size: 20px;
     color: grey;
     padding-left: 450px;
-    /* text-align: center; */
     width: 70%;
 }
 
-.cold{
-    padding: 10px 30px;
-    margin-left: 450px;
-    margin-top: 40px;
-    background-color:  rgb(243, 186, 0);
-    border-radius: 5px;
-    border: none;
-}
-
-/* ── Variables ── */
-:root {
-  --navy:    #0d1f3c;
-  --gold:    #c9a84c;
-  --gold-lt: #e8c96e;
-  --white:   #ffffff;
-  --surface: #f5f6fa;
-  --border:  #dde1ea;
-  --error:   #d64040;
-  --success: #2b9e6b;
-  --text:    #1a1a2e;
-  --muted:   #6b7280;
-  --radius:  12px;
-}
-
-/* ── Open Account Button ── */
 .btn-open {
     margin-left: 450px;
-    padding: 10px 30px;
-    margin-left: 450px;
     margin-top: 40px;
-    background-color:  rgb(243, 186, 0);
+    padding: 10px 30px;
+    background-color: rgb(243, 186, 0);
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
+
 .btn-open:hover {
-  background: var(--gold-lt);
-  box-shadow: 0 5px 15px rgb(231, 132, 3);
-  transform: translateY(-1px);
+    background: var(--gold-lt);
+    box-shadow: 0 5px 15px rgb(231, 132, 3);
+    transform: translateY(-1px);
 }
 
-/* ── Overlay ── */
-.overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(13, 31, 60, .55);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-.overlay.active {
-  display: flex;
-}
-
-/* ── Modal Card ── */
-.modal {
-  background: var(--white);
-  border-radius: 20px;
-  width: 100%;
-  max-width: 500px;
-  max-height: 90vh;
-  overflow-y: auto;
-  padding: 40px 36px 36px;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, .22);
-  position: relative;
-  animation: slideUp .35s cubic-bezier(.22, .68, 0, 1.2) forwards;
-}
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(30px) scale(.97); }
-  to   { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-/* ── Close Button ── */
-.close-btn {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  background: var(--surface);
-  border: none;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  font-size: 1.1rem;
-  cursor: pointer;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* transition: background .2s, color .2s; */
-}
-.close-btn:hover {
-  background: #e5e7ef;
-  color: var(--text);
-}
-
-/* ── Modal Header ── */
-.modal-header { 
-    margin-bottom: 28px; 
-}
-
-.modal-header .tag {
-  display: inline-block;
-  background: rgba(201, 168, 76, .15);
-  color: var(--gold);
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 50px;
-  /* margin-bottom: 10px; */
-}
-.modal-header h2{
-  font-size: 1.65rem;
-  color: var(--navy);
-  margin-top: 10px;
-}
-
-.linear{
-  color: black;
-  font-size: 1.2rem;
-  margin-top: 5px;
-  line-height: 1.5;
-  display: block;
-  width: 100%
-}
-
-/* ── Form Grid ── */
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-.form-group.full {
-  grid-column: 1 / -1;
-}
-
-/* ── Labels & Inputs ── */
-label {
-  font-size: .8rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin-bottom: 6px;
-  letter-spacing: .3px;
-}
-input, select {
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius);
-  padding: 11px 14px;
-  font-size: .9rem;
-  color: var(--text);
-  background: var(--white);
-  outline: none;
-  transition: border-color .2s, box-shadow .2s;
-}
-input:focus, select:focus {
-  border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(13, 31, 60, .1);
-}
-input.error, select.error {
-  border-color: var(--error);
-}
-
-/* ── Error Messages ── */
-.error-msg {
-  color: var(--error);
-  font-size: .75rem;
-  margin-top: 4px;
-  display: none;
-}
-.error-msg.show {
-  display: block;
-}
-
-/* ── Submit Button ── */
-.btn-submit {
-  width: 100%;
-  margin-top: 24px;
-  padding: 14px;
-  background: var(--navy);
-  color: var(--white);
-  border: none;
-  border-radius: var(--radius);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  letter-spacing: .4px;
-  transition: 2s, transform .15s;
-}
-.btn-submit:hover {
-  background: #162d52;
-  transform: translateY(-1px);
-}
-
-/* ── Success Toast ── */
-.toast {
-  display: none;
-  position: fixed;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2b9e6b;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  box-shadow: 0 8px 24px rgba(43,158,107,0.35);
-  z-index: 9999;
-  white-space: nowrap;
-}
-.toast.show {
-  display: block;
-}
-
-
-@keyframes fadeIn {
-  from { opacity: 0; bottom: 20px; }
-  to   { opacity: 1; bottom: 32px; }
-}
-
-
-.slip{
+.slip {
     padding: 10px 30px;
     margin: 0 20px;
     background-color: rgb(2, 12, 58);
@@ -729,78 +447,256 @@ input.error, select.error {
     cursor: pointer;
 }
 
-.slip:hover{
+.slip:hover {
     transform: translateY(-1px);
-    border: 1px solid  rgb(208, 208, 224);
+    border: 1px solid rgb(208, 208, 224);
     box-shadow: 0 5px 15px rgb(131, 130, 129);
 }
-/* figure ends here */
 
-footer{
+/* ===================== VARIABLES ===================== */
+:root {
+    --navy:    #0d1f3c;
+    --gold:    #c9a84c;
+    --gold-lt: #e8c96e;
+    --white:   #ffffff;
+    --surface: #f5f6fa;
+    --border:  #dde1ea;
+    --error:   #d64040;
+    --success: #2b9e6b;
+    --text:    #1a1a2e;
+    --muted:   #6b7280;
+    --radius:  12px;
+}
+
+/* ===================== MODAL ===================== */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 31, 60, .55);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.overlay.active { display: flex; }
+
+.modal {
+    background: var(--white);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 40px 36px 36px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, .22);
+    position: relative;
+    animation: slideUp .35s cubic-bezier(.22, .68, 0, 1.2) forwards;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px) scale(.97); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background: var(--surface);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background: #e5e7ef;
+    color: var(--text);
+}
+
+.modal-header { margin-bottom: 28px; }
+
+.modal-header .tag {
+    display: inline-block;
+    background: rgba(201, 168, 76, .15);
+    color: var(--gold);
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+.modal-header h2 {
+    font-size: 1.65rem;
+    color: var(--navy);
+    margin-top: 10px;
+}
+
+.linear {
+    color: #444;
+    font-size: 0.95rem;
+    margin-top: 6px;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group { display: flex; flex-direction: column; }
+.form-group.full { grid-column: 1 / -1; }
+
+label {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+    letter-spacing: .3px;
+}
+
+input, select {
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 11px 14px;
+    font-size: .9rem;
+    color: var(--text);
+    background: var(--white);
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus, select:focus {
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(13, 31, 60, .1);
+}
+
+input.error, select.error { border-color: var(--error); }
+
+.error-msg {
+    color: var(--error);
+    font-size: .75rem;
+    margin-top: 4px;
+    display: none;
+}
+
+.error-msg.show { display: block; }
+
+.btn-submit {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: .4px;
+    transition: background .2s, transform .15s;
+}
+
+.btn-submit:hover {
+    background: #162d52;
+    transform: translateY(-1px);
+}
+
+/* ===================== TOAST ===================== */
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2b9e6b;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 8px 24px rgba(43, 158, 107, 0.35);
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+.toast.show { display: block; }
+
+@keyframes fadeIn {
+    from { opacity: 0; bottom: 20px; }
+    to   { opacity: 1; bottom: 32px; }
+}
+
+/* ===================== FOOTER ===================== */
+footer {
     background-color: rgb(3, 1, 31);
     padding-top: 50px;
 }
 
-.footer-card{
+.footer-card {
     display: flex;
     justify-content: space-between;
     padding: 0 80px;
 }
 
-.footer h1{
+.footer h1 {
     color: white;
     font-size: 40px;
     text-transform: uppercase;
-    
 }
 
-.footer p{
+.footer p {
     color: grey;
     width: 50%;
     padding: 10px 0;
     line-height: 1.5;
-
 }
 
-.footer h3{
+.footer h3 {
     color: rgb(245, 188, 0);
     font-size: 20px;
 }
 
-.footer li{
+.footer li {
     list-style: none;
     margin: 15px 0;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: grey;
-    line-height: 1;
 }
 
-.footer a:hover{
-    color: rgb(255, 187, 0);
-}
+.footer a:hover { color: rgb(255, 187, 0); }
 
-.copy p{
+.copy p {
     color: grey;
     margin-top: 50px;
     border-top: 1px solid grey;
     padding: 20px 50px;
 }
 
+/* ===================== MEDIA QUERY ===================== */
+@media screen and (max-width: 768px) {
 
+    body { overflow-x: hidden; }
 
-
-
-
-
-/* media query starts here */
-@media screen and (max-width:768px) {
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
+    /* --- Nav --- */
+    .nav-links {
         position: absolute;
         background-color: white;
         top: 70px;
@@ -810,171 +706,191 @@ footer{
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        z-index: 999;
     }
-    
-    .nav-links li{
+
+    .nav-links li {
         display: block;
         margin: 10px 0;
         font-size: 20px;
     }
 
-    .nav-links.active{
-        display: flex;
-    }
+    .nav-links a { color: black; }
 
-    .menu-icon{
+    .nav-links.active { display: flex; }
+
+    .menu-icon {
         color: white;
         display: block;
         font-size: 30px;
-
     }
 
-    .hero-section{
+    /* --- Hero --- */
+    .hero-section {
         flex-direction: column;
-        /* text-align: center; */
-        padding: 20px;
+        padding: 80px 20px 40px;
     }
 
-    .hero-section img{
-        width: 450px;
-        height: 400px;
-    }
-
-    .container h2{
+    .hero-section img {
         width: 100%;
-        font-size: 45px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .container h2 {
+        width: 100%;
+        font-size: 36px;
         padding: 10px 0;
-        
     }
 
-    .container p{
+    .container > p { width: 100%; }
+
+    .btn2 { width: 100%; text-align: center; }
+
+    .btn3 {
         width: 100%;
-    }
-
-    .btn3{
-        margin: 0 10px;
-    }
-
-    .carrier{
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
-
-    .figo{
-        padding: 50px 30px;
-    }
-
-    .figo h2{
-        font-size: 40px;
-    }
-
-    .para{
-        width: 100%;
-    }
-
-    .properties{
-        grid-template-columns: 1fr;
-    }
-
-    figcaption h3{
-    font-size: 45px;
-    color: white;
-    padding: 20px 0;
-   }
-
-
-    .tag{
-        font-size: 20px;
-        color: grey;
-        width: 100%;
-    }
-
-    .badge{
-        flex-direction: column;
-    }
-
-    .plug{
-        height: 75vh;
-    }
-
-    .plug p{
-        width: 100%;
-    }
-
-    .btn8{
-        margin: 60px 40px;
-    }
-
-    .middle{
-        height: 85vh;
-    }
-
-    .middle p{
-        width: 100%;
-    }
-
-    .top-span{
-        position: relative;
-        top: -37rem;
-        right: -80px;
-    }
-
-    .btn1{
-        margin: 70px 30px;
-    }
-
-    .admin{
-        padding: 50px 5px;
-    }
-
-    table {
-     margin: 0;
-     max-width: 100px;
-     width: 40%;
-    }
-
-    .admin button {
-        padding: 6px 10px;
-    }
-
-    .classy p{
-         padding-left: 30px;
-         width: 100%;
-    }
-
-    .btn-open{
-        margin-left: 100px;
-    }
-
-    .slip{
-        margin: 20px 100px;
-    }
-
-    .footer-card{
-        flex-direction: column;
+        margin: 10px 0;
         text-align: center;
     }
 
-    .footer p{
+    /* --- Stats --- */
+    .carrier {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    /* --- Services --- */
+    .figo { padding: 40px 20px; }
+
+    .figo h2 { font-size: 32px; }
+
+    .para { width: 100%; }
+
+    .properties { grid-template-columns: 1fr; }
+
+    /* --- Account Types --- */
+    figcaption {
+        padding: 40px 20px;
+    }
+
+    figcaption h3 {
+        font-size: 32px;
+        padding: 16px 0;
+    }
+
+    .tag {
         width: 100%;
+        font-size: 16px;
     }
 
-    .footer h3{
-        padding-top: 20px;
+    .badge {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .copy p{
+    .plug {
+        height: auto;
         padding: 20px;
-        text-align: center;
     }
 
+    .plug p { width: 100%; }
 
+    .btn8 {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
 
+    .middle {
+        height: auto;
+        padding: 20px;
+        margin-top: 30px;
+    }
 
+    .middle p { width: 100%; }
+
+    .top-span {
+    position: relative;
+    top: -32.5rem;
+    right: -70px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
+    .btn1 {
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+    }
 
+    /* --- Booking --- */
+    .book {
+         padding: 40px 20px; 
+        }
 
+    /* --- CTA Section --- */
+    .classy { 
+        padding: 40px 20px; 
+    }
 
+    .classy h1 { 
+        font-size: 32px; 
+    }
 
+    .advisor {
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .btn-open {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .slip {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* --- Modal --- */
+    .modal {
+        padding: 28px 20px 24px;
+        border-radius: 14px;
+    }
+
+    .form-grid { grid-template-columns: 1fr; }
+
+    /* --- Admin --- */
+    .admin { padding: 50px 5px; }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .admin button { padding: 6px 10px; }
+
+    /* --- Footer --- */
+    .footer-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .footer p { width: 100%; }
+
+    .footer h3 { padding-top: 20px; }
+
+    .copy p {
+        padding: 20px;
+        text-align: center;
+    }
+}
